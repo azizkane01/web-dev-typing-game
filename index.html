@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu de Saisie Rapide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Jeu de Saisie Rapide</h2>
+
+    <div class="info-score">
+      <div class="info">
+        <div class="label">Score</div>
+        <div class="value" id="score-display">0</div>
+      </div>
+      <div class="info">
+        <div class="label">Temps</div>
+        <div class="value" id="time-display">60</div>
+      </div>
+      <div class="info">
+        <div class="label">MPM</div>
+        <div class="value" id="wpm-display">0</div>
+      </div>
+      <div class="info">
+        <div class="label">Précision</div>
+        <div class="value" id="accuracy-display">100%</div>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <div class="word-display" id="word-display">
+      Cliquez sur "Commencer" pour jouer !
+    </div>
+
+    <div class="input-container">
+      <input type="text" id="word-input" placeholder="Tapez le mot ici..." disabled />
+    </div>
+
+    <div class="boutons">
+      <button id="commencer">Commencer</button>
+      <button id="recommencer" disabled>Recommencer</button>
+    </div>
+
+    <div class="game-summary" id="game-summary">
+      <h3>🎉 Partie terminée !</h3>
+      <div class="stats">
+        <div>Votre score final : <span id="final-score">0</span> mots</div>
+        <div>Vitesse moyenne : <span id="final-wpm">0</span> MPM</div>
+        <div>Précision finale : <span id="final-accuracy">0</span>%</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
